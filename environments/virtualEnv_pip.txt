@@ -1,0 +1,36 @@
+VENV
+    ### CREATE VIRTUAL ENVIRONMENT
+        py -m venv /path/to/new/virtual/environment
+    OR
+        mkdir projectA
+        cd projectA
+        py -m venv <env name> 
+
+    ### ACTIVATE VIRTUAL ENVIRONMENT
+        ./<env name>/Scripts/activate
+
+    ### EXIT VIRTUAL ENVIRONMENT
+        deactivate
+
+    ### DELETE VIRTUAL ENVIRONMENT
+        cd <list of env>
+        rm -r <env name>
+
+
+PIP
+    ### PIP INSTALL DUMMY PACKAGE FOR TESTING
+        pip install dummy_test
+
+    ### PIP uninstall
+        pip uninstall <package>
+        pip uninstall -r <requirements file>
+
+    ### LIST PACKAGES INSTALLED
+        pip list
+
+    ### EXPORT LIST OF PACKAGES
+        pip freeze > requirements.txt
+
+    ### INSTALL FROM REQUIREMENTS FILE
+        pip install -r requirements.txt
+
